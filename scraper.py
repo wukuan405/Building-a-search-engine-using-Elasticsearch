@@ -8,7 +8,7 @@ if __name__ == "__main__":
     website = "https://hackr.io/"
     html_content = urlopen(website)
     soup_data = BeautifulSoup(html_content, 'lxml')
-    urls = soup_data.findAll('a', attrs={'class': ' topic-grid-item js-topic-grid-item'})
+    urls = soup_data.findAll('a', attrs={'class': 'topic-grid-item js-topic-grid-item'})
     for data in urls:
         time.sleep(randint(0, 4))
         # Get HTML content of the URL
