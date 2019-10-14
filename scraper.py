@@ -24,7 +24,7 @@ if __name__ == "__main__":
             d1 = result.find('a', {'class': 'js-details'})
             d2 = result.find('span', {'class': 'count'})
             d3 = result.findAll('span', attrs={'class': 'label label-xs label-primary'})
-            d4 = result.find('a', {'class': 'icon-details'})
+            d4 = result.find('a', {'class': 'js-tutorial-title'})
             topic = d1.attrs["data-topic"]
             title = d1.attrs["data-tutorial"]
             url = d4.attrs["href"]
